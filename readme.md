@@ -1,3 +1,6 @@
+## Hosted On
+https://adarsh-dayanand-portfolio.netlify.app/
+
 ## Deployment
 
 ### Option 1
