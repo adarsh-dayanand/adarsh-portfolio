@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Cloud, Database, Smartphone, Brain, Settings } from 'lucide-react';
+import { APP_CONSTANTS } from '../constants/app.constants';
 
 const Skills = () => {
   const skillCategories = [
@@ -9,8 +10,8 @@ const Skills = () => {
       icon: <Smartphone className="w-6 h-6" />,
       color: "from-blue-500 to-cyan-500",
       skills: [
-        "React", "React Native", "TypeScript", "JavaScript", 
-        "Angular", "HTML5/CSS3", "Tailwind CSS", "Next.js"
+        "React", "React Native", "Flutter", "TypeScript", "JavaScript", 
+       "HTML5/CSS3", "Tailwind CSS"
       ]
     },
     {
@@ -19,7 +20,7 @@ const Skills = () => {
       color: "from-green-500 to-emerald-500",
       skills: [
         "Node.js", "Python", "Express.js", ".NET Core", 
-        "RESTful APIs", "GraphQL", "Microservices"
+        "RESTful APIs", "Microservices"
       ]
     },
     {
@@ -27,8 +28,8 @@ const Skills = () => {
       icon: <Cloud className="w-6 h-6" />,
       color: "from-orange-500 to-red-500",
       skills: [
-        "AWS", "Docker", "CI/CD", "DevOps", "AWS Lambda", 
-        "AWS S3", "AWS EC2", "Kubernetes"
+        "AWS", "Docker", "CI/CD", "DevOps", 
+        "AWS S3", "AWS EC2"
       ]
     },
     {
@@ -36,8 +37,8 @@ const Skills = () => {
       icon: <Database className="w-6 h-6" />,
       color: "from-purple-500 to-pink-500",
       skills: [
-        "PostgreSQL", "MongoDB", "MySQL", "Firebase", 
-        "Redis", "Prisma", "DynamoDB"
+        "PostgreSQL", "MongoDB", "MS SQL", "Firebase", 
+        "Redis", "DynamoDB"
       ]
     },
     {
@@ -46,7 +47,7 @@ const Skills = () => {
       color: "from-indigo-500 to-purple-500",
       skills: [
         "Prompt Engineering", "AI Integration", "Machine Learning", 
-        "GitHub Copilot", "OpenAI APIs", "LangChain"
+        "GitHub Copilot", "OpenAI APIs"
       ]
     },
     {
@@ -65,7 +66,6 @@ const Skills = () => {
     { name: "React Native", color: "bg-cyan-500" },
     { name: "Node.js", color: "bg-green-500" },
     { name: "JavaScript", color: "bg-yellow-500" },
-    { name: "TypeScript", color: "bg-blue-600" },
     { name: "AWS", color: "bg-orange-500" },
     { name: "Python", color: "bg-green-600" },
     { name: "PostgreSQL", color: "bg-blue-700" }
@@ -169,7 +169,7 @@ const Skills = () => {
                 Professional <span className="gradient-text">Journey</span>
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-8">
-                With <span className="font-bold text-primary-600">3+ years</span> of professional experience, 
+                With <span className="font-bold text-primary-600">{APP_CONSTANTS.YEARS_OF_EXPERIENCE}+ years</span> of professional experience, 
                 I specialize in full-stack development with expertise in modern web technologies. 
                 My recent focus on <span className="font-bold text-primary-600">AWS cloud services</span> and 
                 <span className="font-bold text-primary-600"> AI integration</span> allows me to build 
@@ -178,15 +178,15 @@ const Skills = () => {
               
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">15+</div>
-                  <div className="text-gray-600">Technologies Mastered</div>
+                  <div className="text-3xl font-bold text-primary-600 mb-2">{APP_CONSTANTS.KNOWN_TECHNOLOGIES_COUNT}+</div>
+                  <div className="text-gray-600">Technologies</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">3+</div>
+                  <div className="text-3xl font-bold text-primary-600 mb-2">{APP_CONSTANTS.YEARS_OF_EXPERIENCE}+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">20+</div>
+                  <div className="text-3xl font-bold text-primary-600 mb-2">{APP_CONSTANTS.CERTIFICATIONS_COUNT}+</div>
                   <div className="text-gray-600">Certifications</div>
                 </div>
               </div>

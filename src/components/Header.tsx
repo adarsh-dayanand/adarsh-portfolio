@@ -29,7 +29,9 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled || (isMenuOpen && 'lg:bg-transparent bg-white/95 backdrop-blur-md shadow-lg')
+        ? 'bg-white/95 backdrop-blur-md shadow-lg'
+        : 'lg:bg-transparent bg-white/95 backdrop-blur-md'
       }`}
     >
       <nav className="container-max section-padding py-4">

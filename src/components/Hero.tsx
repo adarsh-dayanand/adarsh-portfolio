@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Rss } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -42,12 +42,12 @@ const Hero = () => {
             >
               Get In Touch
             </a>
-            <a
+            {/* <a
               href="#projects"
               className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-full font-semibold hover:bg-primary-600 hover:text-white transition-all duration-200"
             >
               View My Work
-            </a>
+            </a> */}
           </motion.div>
 
           <motion.div
@@ -73,7 +73,15 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="https://medium.com/@adarsh-d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-200 text-gray-700 hover:text-primary-600"
+            >
+              <Rss size={24} />
+            </a>
+            <a
+              href="#contact"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-200 text-gray-700 hover:text-primary-600"
             >
               <Mail size={24} />

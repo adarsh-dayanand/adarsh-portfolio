@@ -6,37 +6,43 @@ const Certifications = () => {
   const certifications = [
     {
       title: "DevOps on AWS",
-      issuer: "Amazon Web Services (AWS)",
+      issuer: "Coursera",
       date: "Mar 2025",
       credentialId: "XUSLQBA7778W",
       skills: ["Cloud Computing", "Amazon Web Services (AWS)"],
       logo: "aws",
-      featured: true
+      featured: true,
+      url: "https://www.coursera.org/account/accomplishments/verify/XUSLQBA7778W"
     },
     {
       title: "AWS Cloud Technical Essentials",
-      issuer: "Amazon Web Services (AWS)",
+      issuer: "Coursera",
       date: "Feb 2025",
-      credentialId: "NKFT8RD3CJZ",
+      credentialId: "NKFTT8RD3CJZ",
       skills: ["Amazon Web Services (AWS)"],
       logo: "aws",
-      featured: true
+      featured: true,
+      url: "https://coursera.org/account/accomplishments/records/NKFTT8RD3CJZ"
     },
     {
       title: "DevOps on AWS: Code, Build, and Test",
-      issuer: "Amazon Web Services (AWS)",
+      issuer: "Coursera",
       date: "Feb 2025",
+      credentialId: "4SVI73NSLYQR",
       skills: ["Amazon Web Services (AWS)", "Cloud Computing"],
       logo: "aws",
-      featured: true
+      featured: true,
+      url: "https://www.coursera.org/account/accomplishments/verify/4SVI73NSLYQR"
     },
     {
       title: "DevOps on AWS: Release and Deploy",
-      issuer: "Amazon Web Services (AWS)",
+      issuer: "Coursera",
       date: "Feb 2025",
+      credentialId: "TNCAULF0IIE4",
       skills: ["Amazon Web Services (AWS)", "Cloud Computing"],
       logo: "aws",
-      featured: true
+      featured: true,
+      url: "https://www.coursera.org/account/accomplishments/verify/TNCAULF0IIE4"
     },
     {
       title: "Software Architecture: From Developer to Architect",
@@ -45,16 +51,28 @@ const Certifications = () => {
       credentialId: "404f97a78a5a5908a4f01dbdf0a1d70a07925b0a0124f7a4d6821f52d55ba81f",
       skills: ["Software Architecture"],
       logo: "linkedin",
-      featured: true
+      featured: true,
+      url: "https://www.linkedin.com/posts/ad-adarsh_certificate-of-completion-activity-7301443846813405185-BniF?utm_source=share&utm_medium=member_desktop&rcm=ACoAACcvWk4B4dvxneuaDkvLnPb90QPVJfxaEQ8"
+    },
+    {
+      title: "AWS Database",
+      issuer: "Coursera",
+      date: "Feb 2025",
+      credentialId: "404f97a78a5a5908a4f01dbdf0a1d70a07925b0a0124f7a4d6821f52d55ba81f",
+      skills: ["Amazon Web Services (AWS)", "Cloud Computing", "Database Management"],
+      logo: "aws",
+      featured: false,
+      url: "https://www.coursera.org/account/accomplishments/verify/WDX6XVU4DRPX"
     },
     {
       title: "Advanced React",
-      issuer: "Meta",
+      issuer: "Coursera",
       date: "Jan 2025",
-      credentialId: "NFKMMMQ2KP8I",
+      credentialId: "NFKMMMO2KP8I",
       skills: ["React.js", "JavaScript"],
       logo: "meta",
-      featured: false
+      featured: false,
+      url: "https://www.coursera.org/account/accomplishments/verify/NFKMMMO2KP8I"
     },
     {
       title: "Advanced prompt engineering techniques",
@@ -247,10 +265,10 @@ const Certifications = () => {
                   ))}
                 </div>
 
-                <button className="flex items-center gap-2 text-primary-600 hover:text-primary-700 text-sm font-medium">
+                {cert?.url && <button className="flex items-center gap-2 text-primary-600 hover:text-primary-700 text-sm font-medium" onClick={() => window.open(cert?.url, '_blank')}>
                   <ExternalLink size={14} />
                   Show credential
-                </button>
+                </button>}
               </motion.div>
             ))}
           </div>
