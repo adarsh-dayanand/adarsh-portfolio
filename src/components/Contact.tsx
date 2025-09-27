@@ -1,29 +1,50 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
-import { MediumIcon } from '../assets/Medium';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
+import { MediumIcon } from "../assets/Medium";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+
+    // Construct email body with form data
+    const emailBody =
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage: ${formData.message}`.trim();
+
+    // Create mailto URL
+    const mailtoUrl = `mailto:ad.29.1999@gmail.com?subject=${encodeURIComponent(
+      formData.subject
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open email client
+    window.location.href = mailtoUrl;
+
     // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const contactInfo = [
@@ -31,32 +52,32 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
       value: "ad.29.1999@gmail.com",
-      link: "mailto:ad.29.1999@gmail.com"
+      link: "mailto:ad.29.1999@gmail.com",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
       value: "+91 8861123860",
-      link: "tel:+918861123860"
+      link: "tel:+918861123860",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
       value: "Bengaluru, Karnataka, India",
-      link: "#"
-    }
+      link: "#",
+    },
   ];
 
   const socialLinks = [
     {
       icon: <Github className="w-5 h-5" />,
       name: "GitHub",
-      url: "https://github.com/adarsh-dayanand"
+      url: "https://github.com/adarsh-dayanand",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/ad-adarsh"
+      url: "https://linkedin.com/in/ad-adarsh",
     },
   ];
 
@@ -74,8 +95,8 @@ const Contact = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, 
-            or just having a chat about technology and innovation.
+            I'm always open to discussing new opportunities, interesting
+            projects, or just having a chat about technology and innovation.
           </p>
         </motion.div>
 
@@ -89,10 +110,13 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Let's Connect
+              </h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Whether you have a project in mind, want to collaborate, or just want to say hello, 
-                I'd love to hear from you. Feel free to reach out through any of the channels below.
+                Whether you have a project in mind, want to collaborate, or just
+                want to say hello, I'd love to hear from you. Feel free to reach
+                out through any of the channels below.
               </p>
             </div>
 
@@ -107,11 +131,11 @@ const Contact = () => {
                   viewport={{ once: true }}
                   className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200"
                 >
-                  <div className="text-primary-600">
-                    {info.icon}
-                  </div>
+                  <div className="text-primary-600">{info.icon}</div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">{info.title}</h4>
+                    <h4 className="font-semibold text-gray-900">
+                      {info.title}
+                    </h4>
                     <p className="text-gray-600">{info.value}</p>
                   </div>
                 </motion.a>
@@ -151,12 +175,17 @@ const Contact = () => {
             viewport={{ once: true }}
             className="bg-gray-50 rounded-xl p-8"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
-            
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Send a Message
+            </h3>
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -171,7 +200,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -188,7 +220,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -204,7 +239,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Message
                 </label>
                 <textarea
