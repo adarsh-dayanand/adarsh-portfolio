@@ -5,10 +5,23 @@ import { Calendar, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      title: "AI Full Stack Engineer",
+      company: "Cargill",
+      location: "",
+      period: "Feb 2026 - Present",
+      type: "Full-time",
+      description: [
+        "Working at the intersection of Generative AI and full-stack development",
+        "Building intelligent, scalable, and user-focused applications using Python, React, React Native, Node.js, and cloud solutions",
+        "Focused on clean architecture, scalability, and high performance"
+      ],
+      technologies: ["Generative AI", "Python", "React", "React Native", "Node.js", "Cloud"]
+    },
+    {
       title: "Software Engineer",
       company: "Siemens",
       location: "Bengaluru, Karnataka, India",
-      period: "Jun 2024 - Present",
+      period: "Jun 2024 - Feb 2026",
       type: "Full-time · Hybrid",
       description: [
         "Driving innovation at the intersection of AI and full-stack development",
@@ -106,10 +119,12 @@ const Experience = () => {
                       <Building size={16} />
                       <span className="font-medium">{exp.company}</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin size={16} />
-                      <span>{exp.location}</span>
-                    </div>
+                    {exp.location && (
+                      <div className="flex items-center gap-2">
+                        <MapPin size={16} />
+                        <span>{exp.location}</span>
+                      </div>
+                    )}
                     <div className="flex items-center gap-2">
                       <Calendar size={16} />
                       <span>{exp.period}</span>
