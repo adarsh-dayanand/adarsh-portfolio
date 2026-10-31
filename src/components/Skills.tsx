@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Cloud, Database, Smartphone, Brain, Settings } from 'lucide-react';
+import { Code, Cloud, Database, Smartphone, Brain, Settings, Bot } from 'lucide-react';
 import { APP_CONSTANTS } from '../constants/app.constants';
 
 const Skills = () => {
@@ -42,6 +42,15 @@ const Skills = () => {
       ]
     },
     {
+      title: "Agentic AI & LLMs",
+      icon: <Bot className="w-6 h-6" />,
+      color: "from-fuchsia-500 to-indigo-500",
+      skills: [
+        "Agentic AI", "Multi-Agent Systems", "RAG", "Tool Calling",
+        "MCP", "LangChain / LangGraph", "Vector Databases", "LLM Evaluation"
+      ]
+    },
+    {
       title: "AI/ML & Emerging Tech",
       icon: <Brain className="w-6 h-6" />,
       color: "from-indigo-500 to-purple-500",
@@ -62,6 +71,7 @@ const Skills = () => {
   ];
 
   const coreSkills = [
+    { name: "Agentic AI", color: "bg-indigo-500" },
     { name: "React", color: "bg-blue-500" },
     { name: "React Native", color: "bg-cyan-500" },
     { name: "Node.js", color: "bg-green-500" },
@@ -170,9 +180,9 @@ const Skills = () => {
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-8">
                 With <span className="font-bold text-primary-600">{APP_CONSTANTS.YEARS_OF_EXPERIENCE}+ years</span> of professional experience, 
-                I work at the intersection of AI and full-stack development as a Gen AI Full Stack Engineer at Cargill. 
-                My focus on <span className="font-bold text-primary-600">Generative AI</span> and 
-                <span className="font-bold text-primary-600"> cloud solutions</span> allows me to build 
+                I work at the intersection of AI and full-stack development as an Agentic AI & Full Stack Engineer at Cargill. 
+                My focus on <span className="font-bold text-primary-600">agentic AI</span> and 
+                <span className="font-bold text-primary-600"> Generative AI</span> with cloud solutions allows me to build 
                 scalable, intelligent applications.
               </p>
               

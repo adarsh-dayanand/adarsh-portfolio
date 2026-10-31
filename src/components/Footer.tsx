@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold gradient-text mb-4">Adarsh</h3>
             <p className="text-gray-400 leading-relaxed">
-              AI Full Stack Engineer @ Cargill, building intelligent, scalable,
+              Agentic AI & Full Stack Engineer @ Cargill, building intelligent, scalable,
               and user-focused applications.
             </p>
           </div>

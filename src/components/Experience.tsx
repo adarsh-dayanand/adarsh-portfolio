@@ -5,17 +5,18 @@ import { Calendar, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "AI Full Stack Engineer",
+      title: "Agentic AI & Full Stack Engineer",
       company: "Cargill",
       location: "",
       period: "Feb 2026 - Present",
       type: "Full-time",
       description: [
-        "Working at the intersection of Generative AI and full-stack development",
+        "Working at the intersection of agentic AI, Generative AI, and full-stack development",
+        "Designing LLM-powered agents and multi-agent workflows that use tools, retrieval (RAG), and APIs to automate real tasks",
         "Building intelligent, scalable, and user-focused applications using Python, React, React Native, Node.js, and cloud solutions",
         "Focused on clean architecture, scalability, and high performance"
       ],
-      technologies: ["Generative AI", "Python", "React", "React Native", "Node.js", "Cloud"]
+      technologies: ["Agentic AI", "Generative AI", "LLMs", "RAG", "Python", "React", "React Native", "Node.js", "Cloud"]
     },
     {
       title: "Software Engineer",

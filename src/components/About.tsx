@@ -41,7 +41,7 @@ const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            I'm a Gen AI Full Stack Engineer at Cargill with 5+ years of
+            I'm an Agentic AI & Full Stack Engineer at Cargill with 5+ years of
             experience, working at the intersection of artificial intelligence
             and full-stack development.
           </p>
@@ -83,7 +83,7 @@ const About = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               I focus on clean architecture, scalability, and high performance,
               and stay up-to-date with the latest industry trends. Whether it's
-              Gen AI features, frontend development with React, backend services
+              agentic AI systems, frontend development with React, backend services
               with Python and Node.js, or cloud infrastructure, I enjoy the
               entire development lifecycle. I also write about software
               development on Medium.
