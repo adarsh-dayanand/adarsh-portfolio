@@ -41,9 +41,9 @@ const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            I'm a passionate software engineer with expertise in full-stack
-            development, specializing in modern web technologies and creating
-            exceptional user experiences.
+            I'm a Gen AI Full Stack Engineer at Cargill with 5+ years of
+            experience, working at the intersection of artificial intelligence
+            and full-stack development.
           </p>
         </motion.div>
 
@@ -73,18 +73,20 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-gray-700 leading-relaxed">
-              With a strong foundation in computer science and years of hands-on
-              experience, I specialize in building robust web applications using
-              cutting-edge technologies. My journey in software development has
-              been driven by curiosity and a passion for solving complex
-              problems.
+              I hold a B.E. in Computer Science from Malnad College of
+              Engineering and build intelligent, scalable, user-focused
+              applications with Python, React, React Native, Node.js, and cloud
+              solutions. My journey in software development has been driven by
+              curiosity and a passion for solving complex problems.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              I believe in writing clean, maintainable code and staying
-              up-to-date with the latest industry trends. Whether it's frontend
-              development with React, backend services with Node.js, or cloud
-              infrastructure, I enjoy the entire development lifecycle.
+              I focus on clean architecture, scalability, and high performance,
+              and stay up-to-date with the latest industry trends. Whether it's
+              Gen AI features, frontend development with React, backend services
+              with Python and Node.js, or cloud infrastructure, I enjoy the
+              entire development lifecycle. I also write about software
+              development on Medium.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4 mt-8">

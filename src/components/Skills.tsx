@@ -46,8 +46,8 @@ const Skills = () => {
       icon: <Brain className="w-6 h-6" />,
       color: "from-indigo-500 to-purple-500",
       skills: [
-        "Prompt Engineering", "AI Integration", "Machine Learning", 
-        "GitHub Copilot", "OpenAI APIs"
+        "Generative AI", "Prompt Engineering", "AI Integration", 
+        "Machine Learning", "GitHub Copilot", "OpenAI APIs"
       ]
     },
     {
@@ -170,9 +170,9 @@ const Skills = () => {
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-8">
                 With <span className="font-bold text-primary-600">{APP_CONSTANTS.YEARS_OF_EXPERIENCE}+ years</span> of professional experience, 
-                I specialize in full-stack development with expertise in modern web technologies. 
-                My recent focus on <span className="font-bold text-primary-600">AWS cloud services</span> and 
-                <span className="font-bold text-primary-600"> AI integration</span> allows me to build 
+                I work at the intersection of AI and full-stack development as a Gen AI Full Stack Engineer at Cargill. 
+                My focus on <span className="font-bold text-primary-600">Generative AI</span> and 
+                <span className="font-bold text-primary-600"> cloud solutions</span> allows me to build 
                 scalable, intelligent applications.
               </p>
               
